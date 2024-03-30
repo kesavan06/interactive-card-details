@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "spaceGrotesk-semibold";
+    src: url("SpaceGrotesk-SemiBold.ttf");
+}
+@font-face {
+    font-family: "spaceGrotesk-light";
+    src: url("SpaceGrotesk-Light.ttf");
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "spaceGrotesk-light";
+}
+
+.part-1{
+    background-image: url("bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 743px;
+}
+.container{
+    display: flex;
+}
+.front-card{
+    position: relative;
+    top: 9%;
+    left: 25%;
+    
+}
+.back-card{
+    position: relative;
+    top: 11%;
+    left: 40%;
+}
+.front-card-text{
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+.front-card-text h2{
+    color: white;
+    margin-top: 80px;
+    letter-spacing: 7px;
+}
+.front-card-text h4,h5{
+    display: inline;
+    color: white;
+    font-weight: 500;
+}
+.front-card-text h5{
+    margin-left: 170px;
+    font-size: 15px;
+}
+.back-card-text{
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    letter-spacing: 3px;
+    color: white;
+}
+form{
+    margin-right: 400px;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.part-2 h4{
+    font-size: 13px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.part-2 input{
+    width: 300px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 15px;
+    font-weight: 800;
+}
+.part-2 button{
+    width: 310px;
+    height: 40px;
+    background-image: linear-gradient(hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 15px;
+}
+.part-2 p{
+    color: red;
+    font-size: 12px;
+}
+@media only screen and (max-width:400px){
+    .container{
+        display: block;
+    }
+    .part-1{
+        background-image: url('bg-main-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+    }
+    .front-card{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        z-index: 0;
+    }
+    .front-card-text{
+        position: absolute;
+        top: 22%;
+        font-size: px;
+    }
+    .back-card{
+        position:absolute;
+        top: 2%;
+        left: 23%;
+        width: 99%;
+        z-index: 1;
+    }
+}
+
